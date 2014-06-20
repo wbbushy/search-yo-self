@@ -18,16 +18,16 @@ gem 'rake'
 gem 'twitter'
 
 gem 'shotgun'
+gem 'debugger'
+gem 'rspec'
 
 group :test do
   gem 'shoulda-matchers'
-  gem 'rack-test'
-  gem 'rspec'
   gem 'capybara'
+  gem 'rack-test'
 end
 
 group :test, :development do
   gem 'factory_girl'
   gem 'faker'
-  gem 'debugger'
 end
