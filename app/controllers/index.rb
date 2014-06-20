@@ -1,5 +1,5 @@
 require 'twitter'
-require 'debugger'
+
 
 
 get '/' do

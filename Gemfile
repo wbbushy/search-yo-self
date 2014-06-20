@@ -18,7 +18,6 @@ gem 'rake'
 gem 'twitter'
 
 gem 'shotgun'
-gem 'debugger'
 gem 'rspec'
 
 group :test do
