@@ -1,0 +1,62 @@
+@font-face
+{
+font-family: barnstormer;
+src: url(../Barnstormer.ttf);
+}
+
+.container {
+  background-image: url('http://www.topoftheburg.com/wp-content/uploads/2012/05/googles-trends-hot-searches.jpg');
+  background-size: contain;
+  margin: 0 auto;
+  height: 50em;
+}
+
+nav {
+  background-color: #4DB8FF;
+  height: 3em;
+}
+
+
+#sign-up {
+  float: left;
+  padding-top: .5em;
+  padding-left: 2em;
+
+}
+
+#sign-out {
+  float: right;
+  padding-top: .5em;
+  padding-right: 2em;
+
+}
+
+
+.sign-in {
+  text-align: left;
+  padding: 1em;
+  padding-top: 0em;
+}
+
+
+#search {
+visibility: hidden;
+padding-left: 1em;
+padding-bottom: 1em;
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  font-family: barnstormer;
+}
+h2 {
+  text-align: center;
+  font-size: 3em;
+  font-family: barnstormer;
+}
+#create-user {
+  visibility: hidden;
+}

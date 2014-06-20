@@ -1,0 +1,56 @@
+<div class="container">
+
+  <nav>
+      <a id="sign-up" href="/sign_up">Sign Up!</a>
+      <a id="sign-out" href="/sign_out" class="signin">Sign Out</a>
+  </nav>
+
+  <div id="title">
+    <h1>SOS</h1>
+    <h2>Search (y)o Stuff</h2>
+  </div>
+
+  <div class="create">
+   <form id="create-user" method="post" action="/create_user">
+      <label class="label" for="name">Name</label>
+      <input type="text" name="name" placeholder="e.g., joe" >
+      <br>
+
+      <label class="label" for="text">Twitter Handle</label>
+      <input type="text" name="twitter_handle" placeholder="e.g., TheRealMcCoy" >
+      <br>
+
+      <label class="label" for="password">Password</label>
+      <input type="password" name="password" placeholder="6 or more characters">
+      <br>
+
+      <div class="submit"><input type="submit" value="Sign Up"></div>
+    </form>
+  </div>
+
+  <div class="sign-in">
+    <form id="sign-in" method="post" action="/sign_in">
+      <label class="label" for="name">Name</label>
+      <input type="text" name="name" placeholder="e.g., butler">
+      <br>
+      <label class="label" for="password">Password</label>
+      <input type="password" name="password" placeholder="6 or more characters">
+      <br>
+      <div class="submit"><input type="submit" class="sign-in-button" value="Sign In"></div>
+    </form>
+  </div>
+
+
+  <div class="search">
+    <form id="search" method="post" action="/search_term">
+      <label class="label" for="search">Search</label>
+      <input type="text" name="search" placeholder="#yolo"><br>
+      <div class="submit"><input type="submit" value="search"></div>
+    </form>
+  </div>
+
+</div>
+
+
+
+

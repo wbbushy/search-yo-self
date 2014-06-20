@@ -1,0 +1,8 @@
+<ul>
+<% @tweets.each do |tweet|%>
+  <% if tweet.text.include? @search_term%>
+    <li><%= tweet.text %></li>
+    <li><%= tweet.user.screen_name %></li>
+  <%end%>
+<% end %>
+</ul>
