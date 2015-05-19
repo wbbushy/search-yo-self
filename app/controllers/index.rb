@@ -1,7 +1,5 @@
 require 'twitter'
 
-
-
 get '/' do
   if session[:user_id]
     @handle = User.find(session[:user_id]).twitter_handle
@@ -40,12 +38,10 @@ get '/sign_out' do
   else
     status 420
   end
-
 end
 
 #SEARCH -----------------------------------------------
 post '/search_term' do
-
 
   client = Twitter::REST::Client.new do |config|
     config.consumer_key        = "p3v6n2DOouySLSWtubbrtwITs"
@@ -53,7 +49,6 @@ post '/search_term' do
     config.access_token        = "55049642-IwoX5n3YpI9IvevdOvX5XLMJaI8BtKhxtBc3QtJlI"
     config.access_token_secret = "yPqoQGSvn6HexNIEK3Ky8zYJccOc8ouB1o8lExC8lKH4t"
   end
-
 
   Search.create(term: params[:search], user_id: session[:user_id])
 

@@ -60,3 +60,15 @@ h2 {
 #create-user {
   visibility: hidden;
 }
+
+#block {
+  width: 60em;
+  height: 30em;
+  background-color: #4DB8FF;
+  border: solid black .5em;
+  z-index: 5;
+  position: absolute;
+  left: 5em;
+  top: 5em;
+}
+

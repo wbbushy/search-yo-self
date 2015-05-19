@@ -8,6 +8,7 @@ function bindEvents() {
   $('#sign-up').on('click', signUp)
   $("#create-user").on('submit', createUser)
   $("#sign-out").on('click', signOut)
+  $("#search").on('submit', popUp)
 }
 
 function signIn(e) {
@@ -84,6 +85,25 @@ function signOut(e) {
     // $('#sign-up').css('visibility', 'visible')
     // $('#sign-out').css('visibility', 'hidden')
     $('#search').css('visibility', 'hidden')
+
+
+  ajaxRequest.fail(function(){
+    console.log("fail!")
+  })
+}
+
+
+function popUp(e) {
+  e.preventDefault()
+  var ajaxRequest = $.ajax({
+    url:'/search_term',
+    type: 'POST'
+    })
+
+  ajaxRequest.done(function(){
+    })
+
+  $('.container').prepend("<div id='block'></div>")
 
 
   ajaxRequest.fail(function(){
